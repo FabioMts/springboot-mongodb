@@ -11,13 +11,12 @@ public class AuthorDTO implements Serializable{
 	private String name;
 	
 	
-	public AuthorDTO() {
-		
+	public AuthorDTO() {		
 	}
 	
 	public AuthorDTO(User obj) {
 		id = obj.getId();
-		id = obj.getName();
+		name = obj.getName();
 	}
 
 	public String getId() {
@@ -35,7 +34,5 @@ public class AuthorDTO implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
 
 }
